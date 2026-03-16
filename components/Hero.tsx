@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "./ui/Button";
-import { Shield, AppWindow as WindowIcon, Paintbrush, ChevronRight } from "lucide-react";
+import { Shield, AppWindow as WindowIcon, Paintbrush, ChevronRight, Grid2x2 } from "lucide-react";
 
 const Hero = () => {
     return (
@@ -53,12 +53,12 @@ const Hero = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+                    className="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-5xl mx-auto"
                 >
                     {/* Row 1 */}
                     <Button
                         size="lg"
-                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl"
+                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl md:col-span-2"
                         onClick={() => (window.location.href = "/services/invisible-grills")}
                     >
                         <Shield className="w-6 h-6 mr-3" />
@@ -68,7 +68,7 @@ const Hero = () => {
 
                     <Button
                         size="lg"
-                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl"
+                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl md:col-span-2"
                         onClick={() => (window.location.href = "/services/upvc-windows")}
                     >
                         <WindowIcon className="w-6 h-6 mr-3" />
@@ -78,7 +78,7 @@ const Hero = () => {
 
                     <Button
                         size="lg"
-                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl"
+                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl md:col-span-2"
                         onClick={() => (window.location.href = "/services/interior-design")}
                     >
                         <Paintbrush className="w-6 h-6 mr-3" />
@@ -86,10 +86,20 @@ const Hero = () => {
                         <ChevronRight className="w-5 h-5 ml-auto group-hover:translate-x-1 transition-transform" />
                     </Button>
 
-                    {/* Row 2 - Centered */}
+                    {/* Row 2 - Perfectly aligned between upper columns */}
                     <Button
                         size="lg"
-                        className="group py-8 rounded-2xl bg-brand-green text-white hover:bg-brand-green-hover border-none shadow-2xl md:col-start-2"
+                        className="group py-8 rounded-2xl bg-white text-brand-black hover:bg-brand-green hover:text-white border-none shadow-2xl md:col-span-2 md:col-start-2"
+                        onClick={() => (window.location.href = "/services/aluminium-windows")}
+                    >
+                        <Grid2x2 className="w-6 h-6 mr-3" />
+                        Aluminium Windows
+                        <ChevronRight className="w-5 h-5 ml-auto group-hover:translate-x-1 transition-transform" />
+                    </Button>
+
+                    <Button
+                        size="lg"
+                        className="group py-8 rounded-2xl bg-brand-green text-white hover:bg-brand-green-hover border-none shadow-2xl md:col-span-2 md:col-start-4"
                         onClick={() => window.open('https://wa.me/918688367177?text=Hi VIKISHA.CO, I saw your website and I am interested in a free consultation for home safety solutions.', '_blank')}
                     >
                         <Shield className="w-6 h-6 mr-3" />

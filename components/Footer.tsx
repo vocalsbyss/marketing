@@ -43,8 +43,9 @@ const Footer = () => {
                     <ul className="space-y-4">
                         <li><Link href="/services" className="text-white/60 hover:text-brand-green transition-colors">Balcony Grills</Link></li>
                         <li><Link href="/services" className="text-white/60 hover:text-brand-green transition-colors">Window Grills</Link></li>
+                        <li><Link href="/services/upvc-windows" className="text-white/60 hover:text-brand-green transition-colors">UPVC Windows</Link></li>
                         <li><Link href="/services" className="text-white/60 hover:text-brand-green transition-colors">Staircase Protection</Link></li>
-                        <li><Link href="/services" className="text-white/60 hover:text-brand-green transition-colors">High-rise Safety</Link></li>
+                        <li><Link href="/services/aluminium-windows" className="text-white/60 hover:text-brand-green transition-colors">Aluminium Windows & Doors</Link></li>
                     </ul>
                 </div>
 

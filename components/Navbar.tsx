@@ -22,6 +22,7 @@ const Navbar = () => {
     const services = [
         { name: "Invisible Grills", href: "/services/invisible-grills" },
         { name: "UPVC Windows & Doors", href: "/services/upvc-windows" },
+        { name: "Aluminium Windows & Doors", href: "/services/aluminium-windows" },
         { name: "Interior Designs", href: "/services/interior-design" },
     ];
 
